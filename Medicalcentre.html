@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Patient Appointment</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+   <div class="container">
+    <h1>Healthy Life Medical Center</h1>
+    <h2>Patient Appointment Registration</h2>
+
+    <form id="appointmentForm">
+
+        <label>First Name</label><br>
+        <input type="text" id="fname" placeholder="Enter your full name">
+            <small id="fnameError" class="error"></small><br><br>
+
+        <label>Last Name</label><br>
+        <input type="text" id="lname" placeholder="Enter your Last name">
+            <small id="lnameError" class="error"></small><br><br>
+
+         <label for="email">Email Address</label>
+            <input type="email" id="email" placeholder="example@gmail.com">
+            <small id="emailError" class="error"></small><br><br>
+
+       <label for="password">Password</label>
+            <input type="password" id="password" placeholder="Enter password">
+            <small id="passwordError" class="error"></small><br><br>
+       <label>Gender</label>
+ 
+            <div class="radio-group">
+ 
+                <input type="radio" id="male" name="gender" value="Male">
+                <label for="male">Male</label>
+ 
+                <input type="radio" id="female" name="gender" value="Female">
+                <label for="female">Female</label>
+                <input type="radio" id="other" name="gender" value="Other">
+                <label for="other">Other</label>
+ 
+            </div>
+ 
+            <small id="genderError" class="error"></small><br><br>
+
+        
+
+        <label>Preferred Service</label><br>
+        <div class="checkbox-group">
+
+        <input type="checkbox" id="generalcheckup" name="service" value="General Checkup"> 
+        <label for="generalcheckup">General Checkup</label>
+        <input type="checkbox" id="dental" name="service" value="Dental"> 
+        <label for="dental">Dental</label>
+        <input type="checkbox" id="eyecare" name="service" value="Eye Care"> 
+        <label for="eyecare">Eye Care</label>
+        </div>
+        <small id="serviceError" class="error"></small><br><br>
+
+
+
+        <label>Doctor's Department</label><br>
+
+        <select id="department">
+            <option value="">Select Department</option>
+            <option>Cardiology</option>
+            <option>Neurology</option>
+            <option>Orthopedics</option>
+            <option>Pediatrics</option>
+        </select>
+        <small id="departmentError" class="error"></small><br><br>
+
+
+        <label for="healthdescription">Health Description</label><br>
+
+        <textarea id="description" rows="5" cols="30" placeholder="Describe your health concerns..."></textarea>
+        <small id="descriptionError" class="error"></small><br><br>
+
+        <button type="submit">Register Appointment</button>
+
+    </form>
+
+    <h3 id="successMessage"></h3>
+
+</div>
+
+<script src="script.js"></script>
+        
+    
+</body>
+</html>
